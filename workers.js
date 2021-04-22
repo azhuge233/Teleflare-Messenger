@@ -1,5 +1,5 @@
 const OPT = {
-  BotToken: '', // Telegram Bot API
+  BotToken: '', // Telegram Bot Token
   ChatID:'', // User ChatID
   ParseMode: 'markdownv2' //keep blank, html, markdown or markdownv2
 }
