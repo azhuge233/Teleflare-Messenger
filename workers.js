@@ -11,8 +11,20 @@ addEventListener('fetch', event => {
 async function handleRequest(request) {
   let url = new URL(request.url);
 
-  let title = url.searchParams.get('title')||'Telegram Bot Notification';
-  let msg = url.searchParams.get('msg')||'Add msg parameter to send customized message';
+  let title = url.searchParams.get('title');
+  let msg = url.searchParams.get('msg');
+  
+  if (title == null || title == "") {
+    return new Response("No Title provided.", {
+      status: 200
+    })
+  }
+
+  if (msg == null || msg == "") {
+    return new Response("No Message provided.", {
+      status: 200
+    })
+  }
  
   if(msg.errcode){
     return new Response(JSON.stringify(msg), {
