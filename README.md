@@ -15,4 +15,4 @@
     https://yourworkersname.yourcloudflarename.workers.dev/?title=Title&msg=test_message
     ```
 
-**Note**: The script uses [MarkdownV2](https://core.telegram.org/bots/api#markdownv2-style) as default parse mode, if you want to use plain text or HTML, you need to modify the title bold symbol ** at line 34.
+**Note**: The script uses [MarkdownV2](https://core.telegram.org/bots/api#markdownv2-style) as default parse mode, if you want to use plain text or HTML, you need to modify the title bold symbol(**) at line 46.
